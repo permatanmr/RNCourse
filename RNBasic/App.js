@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image} from 'react-native';
+import { View, Image } from 'react-native';
 
 
 export default class App extends React.Component {
@@ -9,8 +9,15 @@ export default class App extends React.Component {
     }
 
     return (
-      <View style={{flex: 1, justifyContent:'center', alignItems: 'center'}}>
-        <Image source={pic} style = {{height:200, width:200}} />
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Image source={pic} style={{
+          width: 200,
+          height: 200,
+          borderRadius: 200 / 2,
+          overflow: "hidden",
+          borderWidth: 3,
+          borderColor: "red"
+        }} />
       </View>
     )
   }
